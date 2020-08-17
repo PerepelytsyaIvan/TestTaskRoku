@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--********** Copyright 2016 Roku Corp.  All Rights Reserved. **********-->
+
+<component name="MainScene" extends="Scene" initialFocus = "filmLabelList" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://devtools.web.roku.com/schema/RokuSceneGraph.xsd" >
+	<!-- importing main handler -->
+    <script type="text/brightscript" uri="pkg:/components/MainScene.brs" />
+
+<children>
+
+<LabelList
+  id = "filmLabelList"
+  translation = "[150,92]"
+  />
+
+<Poster 
+  id="imageFilm"
+	width="500"
+	height="400"
+  loadDisplayMode = "scaleToFit"
+	translation="[700,50]"
+/>
+
+<Label
+  id="titleLabel"
+  height="50"
+  width="250"
+  horizAlign = "left"
+  vertAlign = "center"
+  translation="[1500,92]"
+   />
+
+<Label
+  id="descriptionLabel"
+  width = "600"
+  wrap = "true"
+  translation="[1300,150]"
+   />
+
+</children>
+
+</component>
